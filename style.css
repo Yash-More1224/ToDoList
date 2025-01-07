@@ -4,10 +4,16 @@ li {
     align-items: center;
     display: flex;
     width: 100%;
-}
+} 
 .close {
     background-color: #fefae0;
 }
 .close:hover {
     background-color: #dda15e;
+}
+.litem {
+    background-color: #e9edc9;
+}
+.litem:hover {
+    background-color: #ccd5ae;
 }

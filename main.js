@@ -26,7 +26,7 @@ function addfunc(){
 
         // append the x-button the the task
         newtask.appendChild(xbutton);
-        
+        newtask.className = "litem";        
         // append the task as a list-item
         mylist.appendChild(newtask);
         inputbox.value = "";
