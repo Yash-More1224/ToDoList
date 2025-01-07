@@ -11,14 +11,24 @@
 // }
 
 // func for "x" button:
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0;i<close.length;i++){
-    close[i].onclick = function(){
-        var li = this.parentElement;
-        li.style.display = "none";
-    }
+// var close = document.getElementsByClassName("close");
+// var i;
+// for (i = 0;i<close.length;i++){
+//     close[i].onclick = function(){
+//         // var li = this.parentElement;
+//         // li.style.display = "none";
+//         alert("clicked");
+//     }
+// }
+
+function deleteTask(){
+    alert("x clicked");
 }
+
+// const buttons = document.querySelectorAll('.close');
+// buttons.forEach(button => {
+//     button.addEventListener('click',deleteTask);
+// });
 
 function addfunc(){
     const inputbox = document.getElementById("myinput");
@@ -33,11 +43,12 @@ function addfunc(){
     } else {
         mylist.appendChild(newtask);
         inputbox.value = "";
-        var xbutton = document.createElement("span");
+        var xbutton = document.createElement("button");
         xbutton.className = "close";
         var x = document.createTextNode("x");
         xbutton.appendChild(x);
-        mylist.appendChild(xbutton)
+        mylist.appendChild(xbutton);
+        xbutton.addEventListener("click",deleteTask);
     }
      
 }
