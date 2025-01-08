@@ -1,12 +1,18 @@
+* {
+    padding: 0%;
+    /* background-color: #fefae0; */
+}
 li {
     list-style-type: none;
     justify-content: space-between;    
     align-items: center;
     display: flex;
-    width: 100%;
+    width: 40%;
 } 
 .close {
     background-color: #fefae0;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 .close:hover {
     background-color: #dda15e;

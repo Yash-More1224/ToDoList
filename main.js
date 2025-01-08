@@ -1,3 +1,10 @@
+const ipbox = document.getElementById("myinput");
+ipbox.addEventListener("keydown",function(event){
+    if (event.key === "Enter") {
+        addfunc();
+    }
+})
+
 function deleteTask(event){
     // alert("x clicked");
     const litem = event.target.parentElement;
